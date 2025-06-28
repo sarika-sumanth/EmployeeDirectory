@@ -28,13 +28,14 @@ EmployeeDirectory/
 ├── .gitattributes
 ├── .gitignore
 ├── HELP.md
-├── mvnw / mvnw.cmd # Maven wrapper scripts
+├── mvnw
+├── mvnw.cmd # Maven wrapper scripts
 ├── pom.xml # Maven configuration
 ├── README.md
 
 ├── .idea/ # IntelliJ IDEA config files
-│ └── ... # .xml settings files
-│
+│ └── ... # .xml project settings
+
 ├── .mvn/
 │ └── wrapper/
 │ └── maven-wrapper.properties
@@ -58,25 +59,27 @@ EmployeeDirectory/
 │ │ │ └── service/
 │ │ │ ├── EmployeeService.java # Service interface
 │ │ │ └── EmployeeServiceImpl.java # Service implementation
-│ │
+│ │ │
 │ │ └── resources/
-│ │ ├── application.properties # Spring config
-│ │ ├── static/ # (Empty - for web assets)
-│ │ └── templates/ # (Empty - for Thymeleaf if needed)
-│
-│
+│ │ ├── application.properties # Spring configuration
+│ │ ├── static/ # (Optional) Web assets
+│ │ └── templates/ # (Optional) Thymeleaf templates
+
 │ └── test/
 │ └── java/com/example/demo/
-│ └── DemoApplicationTests.java # Basic test class
-│
-├── target/ # Build output (ignored in Git)
+│ └── DemoApplicationTests.java # Unit test
+
+├── target/ # Build output (Git ignored)
 └── ...
+
 
 
 
 ## Run the built JAR
 
 java -jar target/employee-directory-0.0.1-SNAPSHOT.jar
+
+
 
 
 ## API Endpoints
@@ -88,6 +91,8 @@ java -jar target/employee-directory-0.0.1-SNAPSHOT.jar
 | POST   | `/employee`      | Add a new employee    |
 | PUT    | `/employee`      | Update an employee    |
 | DELETE | `/employee/{id}` | Delete employee by ID |
+
+
 
 
 
