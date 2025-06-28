@@ -1,8 +1,3 @@
-Sure! Here's the **complete and clean `README.md`** file for your **EmployeeDirectory Spring Boot CRUD project**, with proper formatting that works perfectly on GitHub (including fixed project structure and code blocks).
-
----
-
-```markdown
 # EmployeeDirectory
 
 A simple **Spring Boot** application that provides basic **CRUD operations** for managing employees.
@@ -40,12 +35,12 @@ EmployeeDirectory/
 ├── .gitignore
 ├── HELP.md
 ├── mvnw
-├── mvnw\.cmd                       # Maven wrapper scripts
-├── pom.xml                        # Maven configuration
+├── mvnw.cmd                        # Maven wrapper scripts
+├── pom.xml                         # Maven configuration
 ├── README.md
 
-├── .idea/                         # IntelliJ IDEA config files
-│   └── ...                        # .xml project settings
+├── .idea/                          # IntelliJ IDEA config files
+│   └── ...                         # .xml project settings
 
 ├── .mvn/
 │   └── wrapper/
@@ -87,7 +82,7 @@ EmployeeDirectory/
 ```bash
 mvn clean install
 mvn spring-boot:run
-````
+```
 
 ### 🚀 Run the built JAR
 
@@ -100,7 +95,7 @@ java -jar target/employee-directory-0.0.1-SNAPSHOT.jar
 ## 🔗 API Endpoints
 
 | Method | Endpoint         | Description           |
-| ------ | ---------------- | --------------------- |
+|--------|------------------|-----------------------|
 | GET    | `/employee`      | Get all employees     |
 | GET    | `/employee/{id}` | Get employee by ID    |
 | POST   | `/employee`      | Add a new employee    |
@@ -135,7 +130,7 @@ spring.jpa.show-sql=true
 spring.h2.console.enabled=true
 ```
 
-You can switch to MySQL by updating:
+To switch to MySQL, update:
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/employeedb
@@ -150,9 +145,9 @@ spring.jpa.hibernate.ddl-auto=update
 
 You can test the API endpoints using tools like:
 
-* **Postman**
-* **cURL**
-* Swagger (if configured)
+- **Postman**
+- **cURL**
+- Swagger UI (optional)
 
 ---
 
@@ -164,11 +159,5 @@ This project is open-source under the **MIT License**.
 
 ## 🙋‍♂️ Author
 
-**Sumanth Sarika**
+**Sumanth Sarika**  
 [GitHub: sarika-sumanth](https://github.com/sarika-sumanth)
-
----
-
-````
-
----
