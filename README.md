@@ -35,7 +35,6 @@ A simple **Spring Boot** application that provides basic **CRUD operations** for
 ## 📁 Project Structure
 
 ```
-
 EmployeeDirectory/
 ├── .gitattributes
 ├── .gitignore
@@ -77,8 +76,7 @@ EmployeeDirectory/
 
 ├── target/                                            # Build output (Git ignored)
 └── ...
-
-````
+```
 
 ---
 
